@@ -15,17 +15,19 @@ header{
   padding: 10px;
   text-align: center;
   justify-content: center;
-  background: #EEEDEB;
+  background: #FC6736;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(255, 121, 11, 0.3), 0 6px 20px 0 rgba(255, 104, 4, 0.3);
 }
 .heading{
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .heading-name{
   font-size: 1.5rem;
   font-weight: 400;
-  color: rgba(100, 99, 99, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 15px;
 }
 header ul {
@@ -37,12 +39,12 @@ header ul li{
   margin: 20px;
   font-size: 1.3rem;
 }
-a{
+header a{
   text-decoration: none;
   font-size: 1.2rem;
-  color: #FC6736;
-  padding: 5px;
-  border: 3px solid #FC6736;
+  color: #fff;
+  padding: 5px 10px;
+  border: 3px solid #fff;
   border-radius: 50px;
 
   
@@ -193,7 +195,7 @@ section{
 .project-description h3{
   margin: 5px;
   text-transform: uppercase;
-  overflow: hidden;
+  
 }
 button{
   width: fit-content;
@@ -207,6 +209,7 @@ button{
 button a{
   color: #fff;
   font-weight: 500;
+  text-decoration: none;
 
 }
 
