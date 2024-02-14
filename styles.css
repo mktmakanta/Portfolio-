@@ -1,0 +1,80 @@
+/* Reset CSS and other styles */
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  /* Initially hide on larger screens */
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    /* Show hamburger menu on smaller screens */
+  }
+
+  #toggle-menu {
+    display: none;
+    /* Hide the checkbox input */
+  }
+
+  #toggle-menu:checked+header .hamburger {
+    transform: rotate(45deg);
+    /* Rotate the top and bottom lines */
+  }
+
+  #toggle-menu:checked+header .hamburger .line:nth-child(2) {
+    opacity: 0;
+    /* Hide the middle line */
+  }
+
+  #toggle-menu:checked+header .hamburger .line:nth-child(1) {
+    transform: translateY(8px) rotate(-45deg);
+    /* Rotate and move the top line */
+  }
+
+  #toggle-menu:checked+header .hamburger .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    /* Rotate and move the bottom line */
+  }
+
+  #toggle-menu:checked~nav .nav-links {
+    display: block;
+    /* Show navigation links when the checkbox is checked */
+  }
+
+  nav ul li {
+    display: block;
+    /* Display navigation links vertically */
+    margin-bottom: 10px;
+  }
+}
