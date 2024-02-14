@@ -34,11 +34,16 @@ header ul {
 }
 header ul li{
   list-style-type: none;
-  margin: 25px;
+  margin: 20px;
   font-size: 1.3rem;
 }
 a{
   text-decoration: none;
+  font-size: 1.2rem;
+  color: #FC6736;
+  padding: 5px;
+  border: 3px solid #FC6736;
+  border-radius: 50px;
 
   
 }
@@ -188,6 +193,7 @@ section{
 .project-description h3{
   margin: 5px;
   text-transform: uppercase;
+  overflow: hidden;
 }
 button{
   width: fit-content;
@@ -218,6 +224,54 @@ footer{
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
+  margin: 20px;
 
   
+}
+input{
+  padding: 10px;
+  margin: 5px;
+  width: 90%;
+  font-size: 1.2rem;
+  
+}
+input:focus{
+  outline: none;
+}
+input:nth-of-type(3){
+  height: 150px;
+  vertical-align: top;
+  
+}
+.send-massage{
+  background: #fd4d12;
+  padding: 10px 20px;
+  margin: 5px;
+  width: fit-content;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.my-contacts{
+  text-align: left;
+  margin: 20px 0 40px 0;
+}
+.contact-head{
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 40px 40px 20px 40px;
+}
+.my-contacts h3{
+  font-size: 1.6rem;
+  margin: 15px 0 5px;
+}
+.my-contacts p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+.my-contacts a{
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
 }
