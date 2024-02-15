@@ -39,6 +39,12 @@ header ul li{
   margin: 20px;
   font-size: 1.3rem;
 }
+header li a:hover {
+  background: #f7f6f4;
+  transition: 0.5s linear 0.2s;
+  color: rgba(54, 54, 54, 0.6);
+
+}
 header a{
   text-decoration: none;
   font-size: 1.2rem;
@@ -112,7 +118,9 @@ section{
   border-radius: 7px;
   display: flex;
   align-items: center;
+  
 }
+
 .full{
   width: 90%;
   height: 10px;
@@ -205,11 +213,22 @@ button{
   border-style: none;
   background: #FC6736;
   margin: 10px 0;
+  transition: 0.5s linear 0.2s ;
+  
+}
+button:hover{
+  background:rgba(252, 103, 54, 0.5) ;
+  
+  
 }
 button a{
   color: #fff;
   font-weight: 500;
   text-decoration: none;
+  
+}
+a:hover{
+  transition: 0.5s linear 0.2s ;
 
 }
 
@@ -422,11 +441,14 @@ input:nth-of-type(3){
 
 button{
   height: 53px;
+ 
 }
 .project p{
   margin: 10px 0;
-
+  
 }
+.project-description{
+
 form{
   display: flex;
   flex-direction: row;
@@ -496,10 +518,17 @@ input:nth-of-type(3){
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  width: 80%;
 }
 #contact h2{
   margin-bottom: 60px;
   font-size: 3rem;
+}
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .contact-head{
   display: none;
@@ -522,10 +551,36 @@ input{
 
 
 
+.header-wrapper{
+  gap: 30px;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.heading{
+  font-size: 2.2rem;
 
+}
 
+.heading-name{
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+nav a {
+  border: 0;
+  border-radius: 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: rgb(66, 66, 66);
+  /* transition: ease-in; */
+  transition:  0.5s linear 0.5s ;
+}
 
+nav a:hover{
+  border-bottom: 4px solid blue;
+}
 
 
 }
