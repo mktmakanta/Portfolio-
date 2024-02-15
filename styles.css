@@ -580,11 +580,10 @@ nav a {
 
 nav a:hover{
   border-bottom: 4px solid blue;
+  background: rgba(255, 255, 255, 0);
 }
 
 
 }
 
-
-
-
+}
